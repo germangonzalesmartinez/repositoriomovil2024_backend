@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   avatar: { type: String, required: true },
   user_password: { type: String, required: true },
   user_role: { type: String, required: true },
-  active: { type: Boolean, require: true, default: true },
+  active: { type: Boolean, required: true, default: true },
 });
 
-module.exports = mongoose.model("UserCollection", userSchema);
+module.exports = mongoose.model("UserCollections", userSchema);
